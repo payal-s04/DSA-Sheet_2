@@ -52,13 +52,12 @@ int trailingZeroes(int n)
 int trailingZeroes(int n)
 {
     int count = 0;
-    for(int i = 2; i <= n; i++)
+    
+    for(int i = 5; i <= n; i *= 5)
     {
-        if(i % 5 == 0 || i % 10 == 10)
-        {
-            count++;
-        }
+        count += n / i;
     }
+    
     return count;
 }
 
