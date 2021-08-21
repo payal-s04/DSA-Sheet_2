@@ -1,5 +1,5 @@
 /*
-Problem :
+Problem 2:
 You are given t number of testcases. Each testcase contains an array a of n elements.
 Write a program to reverse the given array a[n].
 
