@@ -14,6 +14,9 @@ E.g.
 #include<iostream>
 using namespace std;
 
+/*
+// Method 1 :
+
 int trailingZeroes(int n)
 {
     long long int fact = 1;
@@ -40,6 +43,22 @@ int trailingZeroes(int n)
         fact /= 10;
     }
     
+    return count;
+}
+*/
+
+// Method 2 :
+
+int trailingZeroes(int n)
+{
+    int count = 0;
+    for(int i = 2; i <= n; i++)
+    {
+        if(i % 5 == 0 || i % 10 == 10)
+        {
+            count++;
+        }
+    }
     return count;
 }
 
